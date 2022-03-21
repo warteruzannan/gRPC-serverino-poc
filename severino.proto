@@ -1,0 +1,21 @@
+
+syntax = "proto3";
+message Void {}
+
+service ServerinoService {
+  rpc ValidateUserData (ValidationUserData) returns (ValidationUserDataList);  
+}
+
+message ValidationUserData{
+    string email = 1;
+}
+
+message ValidationUserDataResponse{
+    string fieldName = 1;
+    float ratio = 2;
+    bool valid = 3;    
+}
+
+message ValidationUserDataList{
+    repeated ValidationUserDataResponse validations = 1;
+}
