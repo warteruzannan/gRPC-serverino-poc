@@ -1,6 +1,0 @@
-syntax = "proto3";
-
-message Pessoa {
-  uint64 id = 1;
-  string email = 2;
-}
