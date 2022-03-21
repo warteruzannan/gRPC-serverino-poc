@@ -38,7 +38,7 @@ const httpServer = http.createServer((req, res) => {
         res.statusCode = 400;
         res.write(error.message);
       } else {
-        res.statusCode = 400;
+        res.statusCode = 200;
         res.write(JSON.stringify(validatedData));
       }
       res.end();
