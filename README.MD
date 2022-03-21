@@ -8,7 +8,9 @@
 
 ### Validar um usuário:
 
-Faça uma requisição para o cliente com o usuário a ser validado.
+Faça uma requisição para o cliente com o usuário a ser validado. 
+Essa requisição será recebida pelo server HTTP e fará uma chamada para o server gRPC. 
+
 
 ```
 curl --location --request POST 'http://localhost:4000/' \
