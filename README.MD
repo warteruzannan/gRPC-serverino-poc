@@ -21,3 +21,5 @@ A resposta será:
 ```
 {"validations":[{"fieldName":"email","ratio":0.47489792108535767,"valid":false}]}
 ```
+
+<img src="./severino.jpg">
