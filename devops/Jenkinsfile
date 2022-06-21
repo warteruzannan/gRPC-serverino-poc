@@ -2,6 +2,10 @@ pipeline {
     agent {
         docker { image 'node:16.15-alpine' }
     }
+
+    parameters {
+        choice(name: 'DEPLOYABLE_ENV', choices: ['develop', 'production', 'staging'], description: 'Ambiente do deploy')
+    }
     
     stages {
         stage('Test') {
